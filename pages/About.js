@@ -1,6 +1,6 @@
 import React from 'react'
-import AboutHero from '../src/components/AboutHero'
-import AboutSection from '../src/components/AboutSection'
+import AboutHero from './components/AboutHero'
+import AboutSection from './components/AboutSection'
 
 const About = () => {
     return (

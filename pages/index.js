@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Header from "../src/components/Header";
-import Sidebar from "../src/components/Sidebar";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 import { React, useState, useEffect } from "react";
 import Areas from "../public/data/area.json";
 import Govs from "../public/data/gov.json";
-import Legends from "../src/components/Legends";
+import Legends from "./components/Legends";
 import About from "./About";
 import { AiOutlineClose } from "react-icons/ai";
 import Info from "./Info";
@@ -13,12 +13,12 @@ import dynamic from "next/dynamic";
 
 
 
-
+const MapWithNoSSR = dynamic(() => import("../src/components/Map"), {
+  ssr: false,
+});
 
 export default function Home() {
-  const MapWithNoSSR = dynamic(() => import("../src/components/Map"), {
-    ssr: false,
-  });
+
 
 
   const [sanitary, setSanitary] = useState(false);

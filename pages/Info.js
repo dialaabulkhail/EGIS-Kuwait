@@ -1,5 +1,5 @@
 import React from 'react'
-import InfoSection from '../src/components/InfoSection'
+import InfoSection from './components/InfoSection'
 
 const Info = () => {
     return (

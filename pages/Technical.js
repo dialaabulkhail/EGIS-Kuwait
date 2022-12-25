@@ -1,5 +1,5 @@
 import React from 'react'
-import TechicalSection from '../src/components/TechicalSection'
+import TechicalSection from './components/TechicalSection'
 
 const Technical = () => {
     return (
