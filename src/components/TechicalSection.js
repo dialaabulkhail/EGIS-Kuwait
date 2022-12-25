@@ -14,7 +14,7 @@ const TechicalSection = () => {
 <h1 className="text-[#162641] tracking-widest font-light text-3xl max-w-[800px] my-5">Built over NEXTJS, Tailwind running over NodeJS Server with GeoServer & QGIS as the backend in integration with PgSQL</h1>
 
 </h1>
-<img src="https://geo1.esmrts.com/wp-content/uploads/2021/05/3-app-stores-2048x222.png" width="50%" className="-mt-[500px]"/>
+<img alt="/" src="https://geo1.esmrts.com/wp-content/uploads/2021/05/3-app-stores-2048x222.png" width="50%" className="-mt-[500px]"/>
      
       </div>
       

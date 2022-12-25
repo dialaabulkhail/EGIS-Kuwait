@@ -1,8 +1,7 @@
 import React from 'react'
-import Header from './components/Header'
-import AboutHero from './components/AboutHero'
+import AboutHero from '../src/components/AboutHero'
+import AboutSection from '../src/components/AboutSection'
 
-import AboutSection from './components/AboutSection'
 const About = () => {
     return (
         <div className='w-full h-full'>

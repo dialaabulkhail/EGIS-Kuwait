@@ -9,10 +9,11 @@ const InfoSection = () => {
   return (
     <div className="">
       <div className=" w-full flex justify-center mt-20">
-        <img
+        <Image
           src="https://geo1.esmrts.com/wp-content/uploads/2021/05/mm.png"
           height={100}
           width={300}
+          alt="/"
         />
       </div>
       <div className="w-full mt-5 justify-center flex text-center ">

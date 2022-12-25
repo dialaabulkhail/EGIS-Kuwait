@@ -1,12 +1,10 @@
 import Head from "next/head";
-import Header from "./components/Header";
-import Search from "./components/Search";
-import Sidebar from "./components/Sidebar";
+import Header from "../src/components/Header";
+import Sidebar from "../src/components/Sidebar";
 import { React, useState, useEffect } from "react";
 import Areas from "../public/data/area.json";
 import Govs from "../public/data/gov.json";
-import Legends from "./components/Legends";
-import AboutSection from "./components/AboutSection";
+import Legends from "../src/components/Legends";
 import About from "./About";
 import { AiOutlineClose } from "react-icons/ai";
 import Info from "./Info";
@@ -14,13 +12,13 @@ import Technical from "./Technical";
 import dynamic from "next/dynamic";
 
 
-const MyMap = dynamic(() => import("./components/Map"), {
-  ssr: false
-});
+
 
 
 export default function Home() {
-  
+  const MapWithNoSSR = dynamic(() => import("../src/components/Map"), {
+    ssr: false,
+  });
 
 
   const [sanitary, setSanitary] = useState(false);
@@ -127,7 +125,7 @@ export default function Home() {
 
         <div className={about ? "hidden" :info? 'hidden' :tech? "hidden" : "w-full h-full"}>
        
-          <MyMap 
+          <MapWithNoSSR 
             govzone={govzone}
             govzone1={govzone1}
             areazone={areazone}
